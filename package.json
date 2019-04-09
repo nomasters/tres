@@ -1,0 +1,43 @@
+{
+  "name": "tres",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start:dev": "npm run build && ./scripts/static-host"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "3.9.3",
+    "@material-ui/icons": "3.0.2",
+    "@material-ui/lab": "3.0.0-alpha.30",
+    "@stablelib/base64": "0.7.2",
+    "@stablelib/nacl": "0.10.2",
+    "@stablelib/random": "0.7.2",
+    "@stablelib/utf8": "0.10.1",
+    "axios": "^0.18.0",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-dropzone": "^10.1.3",
+    "tweetnacl": "1.0.1"
+  },
+  "devDependencies": {
+    "@types/axios": "0.14.0",
+    "@types/material-ui": "0.21.5",
+    "@types/react": "16.8.6",
+    "@types/react-dom": "16.0.9",
+    "@types/react-tap-event-plugin": "0.0.30",
+    "awesome-typescript-loader": "5.2.1",
+    "copy-webpack-plugin": "5.0.2",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "3.2.0",
+    "source-map-loader": "0.2.4",
+    "typescript": "3.4.2",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0"
+  }
+}
