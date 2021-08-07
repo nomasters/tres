@@ -5,7 +5,7 @@ import {
   WithStyles,
   createStyles
 } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
+import Grid, { GridSpacing } from "@material-ui/core/Grid";
 import Dropzone from "./Dropzone";
 import Share from "./Share";
 import * as tres from "../tres";
@@ -62,7 +62,7 @@ const setInitialState = () => {
   };
 };
 
-interface Props extends WithStyles<typeof styles> {}
+interface Props extends WithStyles<typeof styles> { }
 
 class App extends React.Component<Props> {
   state = {
@@ -121,18 +121,13 @@ class App extends React.Component<Props> {
     });
   };
 
-  // TODO
-  // - start loading window
-  // - pass in url to encrypt tool
-  // - upload to IPFS, try to upload to the same URL, else, send to infura
-  // - return url + decrypt key
 
   render() {
     const { classes } = this.props;
 
     return (
       <div className={classes.root}>
-        <Grid container className={classes.container} spacing={24}>
+        <Grid container className={classes.container} spacing={24 as GridSpacing}>
           <Grid item xs>
             {this.state.showDropzone ? (
               <Dropzone callback={this.dzCallback} />

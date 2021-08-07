@@ -9,5 +9,7 @@
     "jsx": "react",
     "allowJs": true
   },
-  "include": ["./src/**/*"]
+  "include": [
+    "./src/**/*"
+  ]
 }
