@@ -6,7 +6,7 @@ This is a rough proof-of-concept idea that I had over a weekend. There are proba
 
 The idea, from a user perspective, is to have an easy-to-use browser tool that you can send encrypted images to friends by dragging and dropping an image and having it generate a magic link that contains the decryption key.
 
-You can see (and test out) a [working example here](https://bafybeidgg6t55g5t6wvlcdar2btrkotknuvl4j44c4rtyai75ejbqrwl6u.ipfs.infura-ipfs.io/?k=fafqAYJRZLBrly2PS3sbKR7Ud-n6by0ogz-GeLuoa9w=)
+You can see (and test out) a [working example here](https://bafybeigvzpdagaddye4q6xv75faznjxzjxpbgtbbzf3qmgif4wqkilirly.ipfs.infura-ipfs.io/?k=OpfnLQRsHerG785IJ9RQyUcWRGF0umlraQ_bc9t06Vc=)
 
 Under the hood, this is using IPFS, react, and [tweetnacl.js's implementation of secretbox](https://tweetnacl.js.org/#/). Everything is stored inline in a single html file. This includes the encrypted blob for the image and all of the js and styling. When a share is created, it sends a request to an IPFS RPC endpoint with a newly constructed single html file with everything inline. I know. old school. But this gives us zero outside dependencies with static file storage on IPFS. So. Fun? Cool?
 
